@@ -100,6 +100,16 @@
         <polygon points="100,50 150,150 50,150" fill="yellow"/>
         <path d="M10 80 Q 95 10 180 80" stroke="black" fill="transparent"/>
     </svg>
+
+    <!-- Immagini responsive -->
+    <h2>Immagine responsive</h2>
+
+    <picture>
+        <source media="(max-width: 800)" srcset="Images/New_york_times_square-terabass800px">
+        <source media="(max-width: 1000)" srcset="Images/New_york_times_square-terabass1000px">
+        <source media="(max-width: 1200)" srcset="Images/New_york_times_square-terabass">
+        <img src="Images/New_york_times_square-terabass.jpg" alt="Vista su Times Square NYC">
+    </picture>
 </body>
 
 </html>
