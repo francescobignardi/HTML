@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Modulo.html">Modulo</a></li>
+        <li><a href="Tabella.html">Tabella</a></li>
+    </ul>
+    <h1>Modulo</h1>
+    <form action="modulo.php" method="get">
+        <fieldset style="width: fit-content;">
+            <legend>Form</legend>
+
+            <label for="name">Nome</label>
+            <input type="text" name="name" placeholder="inserisci il nome" required>
+            <label for="cognome">Cognome</label>
+            <input type="text" name="cognome" placeholder="inserisci il cognome" disabled>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="inserisci l'email">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="inserisci la password">
+            <label>Note</label>
+            <textarea></textarea>
+            <label style="margin-top: 10px;">Genere</label>
+            <div>
+                <input type="radio" name="genere" value="m">Maschio
+                <input type="radio" name="genere" value="f">Femmina
+            </div>
+            <label>Data di nascita</label>
+            <input type="date">
+            <label for="macchina preferita">Macchina preferita</label>
+            <select name="macchina preferita">
+                <option value="Volvo">Volvo</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes</option>
+            </select>
+            <label for="Iscriviti">Iscriviti alla newsletter</label>
+            <input type="checkbox">
+
+        </fieldset>
+    </form>
+    <input type="submit" value="Invia">
+    <input type="reset" value="Resetta">
+</body>
+
+</html>
